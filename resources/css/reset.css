@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;700&display=swap');
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    line-height: 0;
+    font-family: 'Saira', sans-serif;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+:root{
+
+}
+html, body{
+    font-size: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.container{
+    max-width: 1400px;
+    padding: 40px 20px;
+    margin: 0 auto;
+}
