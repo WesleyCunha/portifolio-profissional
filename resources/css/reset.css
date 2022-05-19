@@ -3,17 +3,20 @@
     margin: 0;
     padding: 0;
     outline: none;
-    line-height: 0;
+    letter-spacing: 0;
     font-family: 'Saira', sans-serif;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
 :root{
-
+    --color-primary :#171717;
 }
 html, body{
     font-size: 100%;
+}
+body{
+    background-color: #FBFBFB;
 }
 ul{
     list-style: none;
@@ -27,6 +30,6 @@ img{
 }
 .container{
     max-width: 1400px;
-    padding: 40px 20px;
+    padding: 20px 40px;
     margin: 0 auto;
 }
