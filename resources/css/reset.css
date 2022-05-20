@@ -17,6 +17,7 @@ html, body{
 }
 body{
     background-color: #FBFBFB;
+    overflow-x: hidden;
 }
 ul{
     list-style: none;
@@ -29,7 +30,7 @@ img{
     display: block;
 }
 .container{
-    max-width: 1400px;
+    max-width: 1200px;
     padding: 20px 40px;
     margin: 0 auto;
 }
