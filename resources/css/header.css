@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    margin-bottom: 50px;
 }
 .header h1{
     font-size: 1.5rem;
@@ -16,7 +17,7 @@
     width: 20px;
     height: 5px;
     background-color: #6a3093;
-    bottom: 0px;
+    bottom: -5px;
     left: 0px;
 }
 
