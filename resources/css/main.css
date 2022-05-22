@@ -124,7 +124,9 @@
   font-size: 8rem;
   word-break: break-all;
   color: #DDD;
-  font-weight: bold
+  font-weight: bold;
+  align-self: center;
+  line-height: 1.5;
 }
 
 .experiencia-texto{
