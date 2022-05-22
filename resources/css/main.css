@@ -101,6 +101,12 @@
    letter-spacing: 0.5rem;
   }
 }
+@media (max-width: 540px) {
+  .introducao-item h2 {
+    font-size: 0.7rem !important;
+       letter-spacing: 0.3rem;
+   }
+}
 @media (max-width: 500px) {
   .introducao {
     grid-template-columns: 1fr !important;
@@ -149,7 +155,7 @@
   border-radius: 5px;
   position: relative;
   margin-bottom: 20px;
-  border-right: 5px solid #B24592;
+  border-right: 3px solid #6a3093;
 }
 .empresa .ano{ 
   position: absolute;
@@ -165,9 +171,7 @@
   height: 20px;
   top: 20px;
   left: -4px;
-  background: #B24592;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(#F15F79, #B24592);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(#F15F79, #B24592); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #6a3093;
   
 }
 
