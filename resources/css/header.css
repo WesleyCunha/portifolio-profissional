@@ -6,19 +6,26 @@
     margin-bottom: 50px;
 }
 .header h1{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     position: relative;
 }
 .header h1::after{
     content: "";
-    display: block;
+    display: inline-block;
     position: absolute;
-    width: 20px;
-    height: 5px;
-    background-color: #F15F79;
-    bottom: -5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    background: #a8ff78;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
     left: 0px;
+    top: -5px;
+    transform: rotate(-45deg);
+    z-index: -1
 }
 
 .meu-principal{
