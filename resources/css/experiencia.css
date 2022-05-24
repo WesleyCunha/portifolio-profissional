@@ -1,0 +1,25 @@
+.experiencia {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 30px;
+  gap: 100px;
+}
+.experiencia h2 {
+  max-width: 4ch;
+  font-size: 8rem;
+  word-break: break-all;
+  color: #ddd;
+  font-weight: bold;
+  align-self: center;
+  line-height: 1.5;
+}
+.experiencia-texto {
+  max-width: 40ch;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+  color: #525252;
+}
+.experiencia p strong {
+  color: #000000;
+}

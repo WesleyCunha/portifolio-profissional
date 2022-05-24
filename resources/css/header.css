@@ -26,7 +26,6 @@
     transform: rotate(-45deg);
     z-index: -1
 }
-
 .meu-principal{
     display: flex;
     gap: 10px;

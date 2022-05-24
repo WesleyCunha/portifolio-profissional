@@ -1,0 +1,109 @@
+.empresa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 20px;
+  border-right: 3px solid #96c93d;
+}
+.empresa .ano {
+  position: absolute;
+  top: 23px;
+  left: -80px;
+  font-size: 0.8rem;
+}
+.empresa::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  top: 20px;
+  left: -4px;
+  background: #96c93d;
+}
+.empresa-titulo {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #000000;
+}
+.empresa-texto {
+  font-size: 0.8rem !important;
+  align-self: flex-start;
+  color: #525252;
+  line-height: 1.4;
+}
+.empresa-tecnoclogia {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+.empresa-tecnoclogia li {
+  background-color: #fff;
+  align-self: flex-start;
+  font-size: 0.85rem;
+  padding: 10px;
+}
+.title-trabalhos {
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-bottom: 20px;
+  position: relative;
+}
+.title-trabalhos::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #00b09b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  left: -18px;
+  top: 6px;
+  border-radius: 3px;
+}
+.link-empresa {
+  display: inline-block;
+  width: auto !important;
+  padding: 10px 20px;
+  background-color: #fff;
+  margin-top: 10px;
+  border-radius: 3px;
+  color: #96c93d;
+}
+.link-empresa:hover {
+  text-decoration: underline;
+}
+@media (max-width: 835px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .experiencia h2 {
+    font-size: 3rem;
+    max-width: initial;
+    color: #525252;
+  }
+  .experiencia-texto {
+    font-size: 1.25rem;
+  }
+  .ano {
+    position: initial !important;
+    order: 1;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 515px) {
+  .empresa {
+    grid-template-columns: 1fr;
+  }
+  .empresa-texto {
+    grid-row: 2 / 3;
+  }
+}
