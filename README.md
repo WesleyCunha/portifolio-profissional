@@ -3,8 +3,12 @@ Trabalhos profissionais já realizado para empresa ou estudo educacional, mostra
 
 ## Google Chrome não funciona rolagem suave
 
-Acesse esse link e habilite o **Smooth Scrolling** habilite e reinicie o navegador.
+Acesse esse link e habilite o **Smooth Scrolling** e reinicie o navegador.
 
 ```
 chrome://flags/#smooth-scrolling 
 ```
+
+### Tecnologias utilizadas
+- HTML5
+- CSS3
