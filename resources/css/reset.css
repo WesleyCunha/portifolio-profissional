@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,500&display=swap');
-*, *::before, *::after{
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     outline: none;
@@ -10,36 +12,49 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
-:root{
-    --color-primary :#171717;
+
+:root {
+    --color-primary: #171717;
 }
-html, body{
+
+html,
+body {
     font-size: 100%;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+    -moz-scroll-behavior: smooth;
 }
-body{
+
+body {
     background-color: #FBFBFB;
     overflow-x: hidden;
 }
-i{
+
+i {
     color: #FBFBFB;
     font-size: 1.5rem;
 }
-ul{
+
+ul {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-img{
+
+img {
     max-width: 100%;
     display: block;
 }
-.container{
+
+.container {
     max-width: 1200px;
     padding: 20px 40px;
     margin: 0 auto;
 }
-.border{
+
+.border {
     border: 1px solid red;
 }
