@@ -12,3 +12,4 @@ chrome://flags/#smooth-scrolling
 ### Tecnologias utilizadas
 - HTML5
 - CSS3
+- FONT AWESOME
