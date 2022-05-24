@@ -1,44 +1,53 @@
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
     margin-bottom: 50px;
 }
-.header h1{
+
+.header h1 {
     font-size: 2rem;
     font-weight: bold;
     position: relative;
     font-family: 'Covered By Your Grace', cursive;
 }
-.header h1::after{
+
+.header h1::after {
     content: "";
     display: inline-block;
     position: absolute;
     width: 30px;
     height: 30px;
     border-radius: 3px;
-    background: #a8ff78;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #a8ff78;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #a8ff78);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     left: 0px;
     top: 1px;
     transform: rotate(-45deg);
     z-index: -1
 }
-.meu-principal{
+
+.meu-principal {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
 }
-.meu-principal a{
+
+.meu-principal a {
     padding: 10px;
     color: var(--color-primary);
 }
-.meu-principal a:hover{
+
+.meu-principal a:hover {
     text-decoration: underline;
 }
-.menu-mobile{
+
+.menu-mobile {
     width: 30px;
     height: 20px;
     display: flex;
@@ -46,25 +55,29 @@
     justify-content: space-between;
     display: none;
 }
-.menu-mobile div{
+
+.menu-mobile div {
     width: 100%;
     height: 3px;
     border-radius: 2px;
     background-color: var(--color-primary);
 }
-@media (max-width:800px){
-    .meu-principal{
+
+@media (max-width:800px) {
+    .meu-principal {
         display: none;
     }
-    .menu-mobile{
+    .menu-mobile {
         display: flex;
     }
 }
-@media (max-width:400px){
-    html, body{
+
+@media (max-width:400px) {
+    html,
+    body {
         font-size: 67%;
     }
-    .container{
+    .container {
         padding: 20px 20px;
     }
 }
