@@ -384,6 +384,7 @@
 .footer{
   background-color: #000;
   padding-top: 50px;
+  z-index: -1;
 }
 .footer .container{
   display: flex;
@@ -393,10 +394,32 @@
   gap: 40px;
 }
 .footer-title{
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+  font-family: 'Covered By Your Grace', cursive;
   color: #FFFFFF;
-  font-size: 0.9rem;
-  font-weight: 300;
+  z-index: 5 !important;
 }
+.footer-title span{
+  color: #000;
+}
+.footer-title::after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  background: #a8ff78;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  left: 0px;
+  top: 1px;
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+
 .menu-rodape{
   display: flex;
   gap: 30px;
@@ -407,6 +430,9 @@
   padding: 10px 20px;
   color: #96c93d;
 }
+.menu-rodape a:hover{
+text-decoration: underline;
+}
 .rede-social{
   display: flex;
   flex-wrap: wrap;
@@ -416,3 +442,5 @@
 .footer-copy{
   color: #ddd;
 }
+
+

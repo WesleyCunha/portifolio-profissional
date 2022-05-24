@@ -36,6 +36,9 @@
     padding: 10px;
     color: var(--color-primary);
 }
+.meu-principal a:hover{
+    text-decoration: underline;
+}
 .menu-mobile{
     width: 30px;
     height: 20px;
