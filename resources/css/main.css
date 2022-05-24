@@ -282,7 +282,6 @@
 
 .formacao {
   background: #1b1d20;
-  display: grid;
 }
 .formacao .container {
   display: grid;
@@ -333,8 +332,10 @@
   margin-bottom: 20px;
 }
 .formacao-titulo-item {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-bottom: 20px !important;
+  font-weight: bold;
+  color: #FFFFFF;
 }
 .formacao-curso span {
   color: #fff;
@@ -376,4 +377,42 @@
   .formacao-titulo {
    font-size: 1.1rem;
   }
+}
+
+
+/* footer */
+.footer{
+  background-color: #000;
+  padding-top: 50px;
+}
+.footer .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.footer-title{
+  color: #FFFFFF;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.menu-rodape{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.menu-rodape a{
+  padding: 10px 20px;
+  color: #96c93d;
+}
+.rede-social{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.footer-copy{
+  color: #ddd;
 }
