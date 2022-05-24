@@ -12,12 +12,10 @@
   padding: 50% 0;
   margin: 20px;
   border-radius: 100%;
-  background: #6a3093;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #a044ff, #6a3093);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   position: relative;
   transform-origin: center !important;
 }
@@ -42,7 +40,7 @@
   border-radius: 50%;
   top: -5%;
   left: -5%;
-  border-left: 1px solid #6a3093;
+  border-left: 1px solid #96c93d;
   transform-origin: center !important;
   animation: header-giro 5s linear infinite;
 }
@@ -64,7 +62,10 @@
   display: block;
   width: 50px;
   height: 50px;
-  background: #f15f79;
+  background: #00b09b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   border-radius: 10px;
   transform: rotate(30deg);
   top: -5px;
@@ -166,7 +167,7 @@
   border-radius: 5px;
   position: relative;
   margin-bottom: 20px;
-  border-right: 3px solid #6a3093;
+  border-right: 3px solid #96c93d;
 }
 
 .empresa .ano {
@@ -184,7 +185,7 @@
   height: 20px;
   top: 20px;
   left: -4px;
-  background: #6a3093;
+  background: #96c93d;
 }
 
 .empresa-titulo {
@@ -227,12 +228,10 @@
   position: absolute;
   width: 10px;
   height: 10px;
-  background: #b24592;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(#f15f79, #b24592);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(#f15f79, #b24592);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #00b09b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   left: -18px;
   top: 6px;
   border-radius: 3px;
@@ -245,7 +244,7 @@
   background-color: #fff;
   margin-top: 10px;
   border-radius: 3px;
-  color: #b24592;
+  color: #96c93d;
 }
 
 .link-empresa:hover {
@@ -354,7 +353,10 @@
   position: absolute;
   width: 3px;
   height: 20px;
-  background-color: #00f700;
+  background: #00b09b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   left: -23px;
   top: 2px;
 }
