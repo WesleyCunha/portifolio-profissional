@@ -44,7 +44,7 @@
     border-radius: 2px;
     background-color: var(--color-primary);
 }
-@media (max-width:700px){
+@media (max-width:800px){
     .meu-principal{
         display: none;
     }
