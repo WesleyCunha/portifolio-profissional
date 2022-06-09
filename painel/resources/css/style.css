@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,500&display=swap");
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    line-height: 1.3em;
+    letter-spacing: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+:root {
+    font-size: 100%;
+}
+
+html,
+body {
+    font-family: Poppins, sans-serif;
+    font-weight: normal;
+    background: #FBFBFB;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background: #AAFFA9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #11FFBD, #AAFFA9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu-principal {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.menu-principal a {
+    padding: 10px 0;
+    color: #171717;
+    position: relative;
+}
+
+.menu-principal a::after {
+    content: "";
+    position: absolute;
+    display: block;
+    margin-top: 5px;
+    width: 0%;
+    height: 3px;
+    background: #fff;
+    transition: all .3s linear;
+}
+
+.menu-principal a:hover:after {
+    width: 100%;
+}
+
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 50px;
+}
+
+.avatar {
+    min-width: 230px;
+    text-align: center;
+    padding: 30px 10px;
+    background: #33B86C;
+    margin-bottom: 20px;
+    clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%);
+}
+
+.avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #FFF;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.avatar h2 {
+    font-size: 0.9rem !important;
+    color: #FFF;
+    font-weight: normal;
+}
+
+.menu-dash {
+    background-color: #F1F1F1;
+    padding: 10px;
+}
+
+.menu-dash a {
+    padding: 10px 0;
+    display: inline-block;
+    color: #171717;
+    transition: all .3s linear;
+}
+
+.active {
+    background-color: red;
+}
+
+.menu-dash a:hover {
+    padding-left: 10px;
+}
+
+.inicio-conteudo h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.inicio-conteudo span {
+    display: block;
+    color: red;
+}
+
+.inicio-conteudo h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.inicio-conteudo p {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #F1F1F1;
+    border-left: 5px solid #33B86C;
+}
+
+.inicio-conteudo input {
+    width: 100%;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 50px;
+    padding: 15px;
+}
+
+.inicio-conteudo textarea {
+    width: 100%;
+    max-height: 500px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+::placeholder {
+    font-size: 1.2rem;
+}
+
+.inicio-conteudo button {
+    padding: 16px 20px;
+    background: #33B86C;
+    color: #FFF;
+    border: none;
+    border-radius: 4px;
+}
+
+.formulario-experiencia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    gap: 20px;
+}
+
+.formulario-experiencia .col-100 {
+    grid-column: 1 / -1;
+}
+
+.formulario-experiencia input,
+select {
+    width: 100%;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    margin-bottom: 0px;
+    padding: 15px;
+}
+
+.formulario-experiencia label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formulario-experiencia .classchekbox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, max-content));
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.formulario-experiencia .classchekbox div {
+    padding: 10px 20px;
+    background-color: #F1F1F1;
+    border-radius: 4px;
+}
+
+.formulario-experiencia .classchekbox label,
+input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin-left: 8px;
+}
