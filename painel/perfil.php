@@ -42,22 +42,24 @@
     <div class="dash-conteudo">
       <div class="inicio-conteudo">
         <div class="title-geral">
-          <h2><i class="fa-solid fa-house"></i> Inicio</h2>
+          <h2><i class="fa-solid fa-user"></i> Perfil</h2>
         </div>
-        <div class="title-form">
-          <span>Reset para o original Titulo</span>
-          <p>Desenvolvedor Front-End & Back-End.</p>
-        </div>
-        <form action="">
-          <label for="titulo">Titulo</label>
-          <input type="text" id="titulo" name="titulo">
+        <form class="formulario-experiencia" action="">
           <div class="title-form">
-            <span>Reset para o original texto</span>
-            <p>Desenvolvo projetos como este utilizando apenas HTML, CSS e JavaScript. Para sistemas web como rede social, lojas virtuais, e entre outros sob demanda, trabalho com php, mysql e na prototipagem utilizo o software o Figma.</p>
+            <span>Resete sua senha</span>
+            <p>Antes de alterar a senha anote no lembrete.</p>
           </div>
-          <label for="descricao">Descrição</label>
-          <textarea name="descricao" id="descricao" rows="10"></textarea>
-          <button type="submit">Atualizar</button>
+          <div>
+            <label for="">Nome</label>
+            <input type="text" name="nome">
+          </div>
+          <div>
+            <label for="">Senha</label>
+            <input type="password" name="senha">
+          </div>
+          <div class="col-100">
+            <button type="submit">Atualizar</button>
+          </div>
         </form>
       </div>
     </div>

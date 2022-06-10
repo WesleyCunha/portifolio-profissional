@@ -47,37 +47,49 @@
         </div>
         <form class="formulario-experiencia" action="">
           <div class="title-form">
-            <span>Cadastro de experiência</span>
-            <p>Cadastre-se as suas experiencia e conquiste o mundo perante o Senhor Jesus.</p>
-          </div>
-          <div>
-            <label for="">Ano</label>
-            <select name="" id="">
-              <option value="">Selecione--</option>
-              <?php for ($i = 2022; $i >= 1920; $i--) : ?>
-                <option value=""><?php echo $i; ?></option>
-              <?php endfor; ?>
-            </select>
-          </div>
-          <div>
-            <label for="">Titulo</label>
-            <input type="text" placeholder="Titulo">
-          </div>
-          <div class="col-100">
-            <label for="">Url</label>
-            <input type="url" placeholder="Titulo">
-          </div>
-          <div class="col-100">
-            <label for="descricao">Descrição</label>
-            <textarea name="" id="" rows="10"></textarea>
-          </div>
-          <div class="title-form">
-            <span>Lista de tecnologia</span>
-            <p>Cadastre as suas habilidade.</p>
+            <span>Back-end</span>
           </div>
           <div class="lista-checbox">
             <div>
-              <label for="">html</label>
+              <label for="">php</label>
+              <input type="checkbox" placeholder="html">
+            </div>
+            <div>
+              <label for="">javascript</label>
+              <input type="checkbox" placeholder="css">
+            </div>
+            <div>
+              <label for="">mysql</label>
+              <input type="checkbox" placeholder="css">
+            </div>
+          </div>
+          <div class="title-form">
+            <span>Front-End</span>
+          </div>
+          <div class="lista-checbox">
+            <div>
+              <label for="">html5</label>
+              <input type="checkbox" placeholder="html">
+            </div>
+            <div>
+              <label for="">css3</label>
+              <input type="checkbox" placeholder="css">
+            </div>
+            <div>
+              <label for="">javascript</label>
+              <input type="checkbox" placeholder="css">
+            </div>
+            <div>
+              <label for="">jquery</label>
+              <input type="checkbox" placeholder="css">
+            </div>
+            </div>
+          <div class="title-form">
+            <span>Auxiliar</span>
+          </div>
+          <div class="lista-checbox">
+            <div>
+              <label for="">sass</label>
               <input type="checkbox" placeholder="html">
             </div>
             <div>
@@ -89,11 +101,7 @@
               <input type="checkbox" placeholder="css">
             </div>
             <div>
-              <label for="">php</label>
-              <input type="checkbox" placeholder="css">
-            </div>
-            <div>
-              <label for="">mysql</label>
+              <label for="">swiper</label>
               <input type="checkbox" placeholder="css">
             </div>
             <div>
@@ -101,7 +109,11 @@
               <input type="checkbox" placeholder="css">
             </div>
             <div>
-              <label for="">swiper</label>
+              <label for="">git</label>
+              <input type="checkbox" placeholder="css">
+            </div>
+            <div>
+              <label for="">Aos</label>
               <input type="checkbox" placeholder="css">
             </div>
           </div>

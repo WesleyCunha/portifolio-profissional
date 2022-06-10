@@ -1,24 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
 *,
 *::before,
 *::after {
     margin: 0;
     padding: 0;
     outline: none;
+    font-size: 1rem;
     line-height: 1.3em;
     letter-spacing: 0;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
-
+/*
+*===============
+Reset Geral 
+*===============
+*/
 :root {
     font-size: 100%;
 }
 
 html,
 body {
-    font-family: Poppins, sans-serif;
+    font-family: 'Saira', sans-serif;
     font-weight: normal;
     background: #FBFBFB;
 }
@@ -42,16 +48,17 @@ img {
     margin: 0 auto;
     padding: 20px;
 }
-
+/*
+*===============
+Reset Geral 
+*===============
+*/
 .header {
-    background: #AAFFA9;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #11FFBD, #AAFFA9);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #06beb6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0 0 10px #DDD;
 }
-
 .header .container {
     display: flex;
     justify-content: space-between;
@@ -61,8 +68,32 @@ img {
 .header h1 {
     font-size: 1.5rem;
     font-weight: bold;
+    color: #FFF;
+    font-family:'Covered By Your Grace',cursive;
+    position: relative;
+    z-index: 50;
+}.header h1 span{
+    color: #171717;
+    font-size: 1.5rem;
 }
-
+.header h1::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    background: #a8ff78;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #a8ff78);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    left: 0px;
+    top: 1px;
+    transform: rotate(-45deg);
+    z-index: -1
+}
 .menu-principal {
     display: flex;
     gap: 40px;
@@ -71,7 +102,7 @@ img {
 
 .menu-principal a {
     padding: 10px 0;
-    color: #171717;
+    color: #FFF;
     position: relative;
 }
 
@@ -86,23 +117,37 @@ img {
     transition: all .3s linear;
 }
 
-.menu-principal a:hover:after {
+.menu-principal a:hover::after {
     width: 100%;
 }
+/*
+*===============
+Dashboard
+*===============
+*/
 
-.dashboard-layout {
+.dashboard {
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 50px;
+    gap: 40px;
 }
 
-.avatar {
+/*
+*===============
+Dashboard avatar
+*===============
+*/
+
+.dash-avatar{}
+.avatar{
     min-width: 230px;
     text-align: center;
     padding: 30px 10px;
-    background: #33B86C;
-    margin-bottom: 20px;
-    clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%);
+    background: #06beb6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .avatar img {
@@ -120,55 +165,105 @@ img {
     font-weight: normal;
 }
 
-.menu-dash {
-    background-color: #F1F1F1;
-    padding: 10px;
+/*
+*===============
+Dashboard menu principal
+*===============
+*/
+.dash-menu{
+    background: #06beb6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 0 0 5px 5px;
+    text-align: left;
+    padding-bottom: 20px;
 }
-
-.menu-dash a {
-    padding: 10px 0;
+.dash-menu li{
+    background: rgba(255,255,255, 0.2);
+    margin-bottom: 2px;
+}
+.dash-menu i{
+    margin-right: 5px;
+}
+.dash-menu a {
+    width: 100%;
+    padding: 10px 10px;
     display: inline-block;
-    color: #171717;
+    color: #FFF;
     transition: all .3s linear;
 }
 
-.active {
-    background-color: red;
+.dash-menu a:hover{
+    background-color: #FFF;
+    color: #171717;
+    border-left: 20px solid #ff9068;
 }
 
-.menu-dash a:hover {
-    padding-left: 10px;
+/*
+*===============
+Dashboard conteudo geral
+*===============
+*/
+.dash-conteudo{
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #DDD;
 }
+
+/*
+*===============
+Dashboard conteudo titulo
+*===============
+*/
 
 .inicio-conteudo h2 {
-    font-size: 2.5rem;
-    margin-bottom: 50px;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #06beb6;
 }
-
-.inicio-conteudo span {
-    display: block;
-    color: red;
+.inicio-conteudo .title-geral{
+    display: flex;
+    align-items: center !important;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
 }
-
-.inicio-conteudo h3 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+.inicio-conteudo div a{
+    padding: 10px 15px;
+    background: #06beb6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: inline-block;
+    color: #FFF;
+    border: none;
+    border-radius: 4px;
 }
-
-.inicio-conteudo p {
+.title-form{
+    grid-column: 1 / -1;
+}
+.title-form span {
+    display: block !important;
+    color: red !important;
+}
+.title-form p {
     margin: 10px 0;
     padding: 10px;
-    background-color: #F1F1F1;
-    border-left: 5px solid #33B86C;
+    background-color: #f1f1f1;
+    border-left: 5px solid #33B86C !important;
+    display: block;
 }
 
-.inicio-conteudo input {
+
+.inicio-conteudo form input, select, textarea {
     width: 100%;
     border: 1px solid #CCC;
     border-radius: 4px;
     padding: 10px;
     margin-bottom: 50px;
     padding: 15px;
+    background-color: #f8f8f8;
 }
 
 .inicio-conteudo textarea {
@@ -185,57 +280,50 @@ img {
 
 .inicio-conteudo button {
     padding: 16px 20px;
-    background: #33B86C;
+    background: #06beb6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    cursor: pointer;
     color: #FFF;
     border: none;
     border-radius: 4px;
 }
 
-.formulario-experiencia {
+
+/*
+*===============
+Dashboard formulario experiencia
+*===============
+*/
+.formulario-experiencia{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    align-items: center;
     gap: 20px;
 }
-
-.formulario-experiencia .col-100 {
+.formulario-experiencia input, select{
+    width: 100%;
+    margin-bottom: 10px !important;
+}
+.col-100{
     grid-column: 1 / -1;
 }
-
-.formulario-experiencia input,
-select {
-    width: 100%;
-    border: 1px solid #CCC;
-    border-radius: 4px;
-    margin-bottom: 0px;
-    padding: 15px;
-}
-
-.formulario-experiencia label {
-    display: block;
-    font-size: 1.1rem;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.formulario-experiencia .classchekbox {
+.lista-checbox{
+    grid-column: 1 / -1;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, max-content));
-    flex-wrap: wrap;
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
+    align-items: flex-start;
     gap: 20px;
 }
 
-.formulario-experiencia .classchekbox div {
-    padding: 10px 20px;
-    background-color: #F1F1F1;
+.lista-checbox div{
+    background: #F2F2F2 !important;
+    padding: 10px;
     border-radius: 4px;
+    display: flex;
+    align-items: center !important;
+    gap: 10px;
 }
-
-.formulario-experiencia .classchekbox label,
-input[type="checkbox"] {
-    display: inline-block;
+.lista-checbox input[type="checkbox"]{
     width: auto;
-    margin-left: 8px;
+    margin-top: 8px;
 }
